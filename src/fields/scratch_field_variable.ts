@@ -104,8 +104,10 @@ export class ScratchFieldVariable extends Blockly.FieldVariable {
     } else if (type === Constants.LIST_VARIABLE_TYPE) {
       for (const option of options) {
         if (option[1] === Blockly.RENAME_VARIABLE_ID) {
+          // @ts-ignore
           option[0] = ScratchMsgs.translate("RENAME_LIST");
         } else if (option[1] === Blockly.DELETE_VARIABLE_ID) {
+          // @ts-ignore
           option[0] = ScratchMsgs.translate("DELETE_LIST").replace(
             "%1",
             this.getText()

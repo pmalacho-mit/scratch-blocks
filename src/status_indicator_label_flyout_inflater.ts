@@ -20,6 +20,7 @@ class StatusIndicatorLabelFlyoutInflater extends Blockly.LabelFlyoutInflater {
    *     label on.
    * @returns The newly created status indicator label.
    */
+  // @ts-ignore
   load(
     state: Blockly.utils.toolbox.LabelInfo,
     flyoutWorkspace: Blockly.WorkspaceSvg
@@ -30,6 +31,7 @@ class StatusIndicatorLabelFlyoutInflater extends Blockly.LabelFlyoutInflater {
       state
     );
     label.show();
+    // @ts-ignore
     return new Blockly.FlyoutItem(label, STATUS_INDICATOR_LABEL_TYPE, true);
   }
 }

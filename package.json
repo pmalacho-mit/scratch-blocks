@@ -32,5 +32,8 @@
     "@blockly/continuous-toolbox": "^7.0.0-beta.1",
     "@blockly/field-colour": "^4.0.2",
     "blockly": "^12.0.0-beta.1"
+  },
+  "peerDependencies": {
+    "blockly": "^12.0.0-beta.1"
   }
 }
